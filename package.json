@@ -1,5 +1,5 @@
 {
-  "name": "BeyondTolerance",
+  "name": "beyondtolerance",
   "version": "1.0.0",
   "description": "A website that helps you calculate tolerance levels for manufacturing processes.",
   "main": "index.js",
@@ -10,9 +10,18 @@
   "author": "Vinicius Campos De Ramos",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "jquery": "^3.7.1"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vine-cr/BeyondTolerance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vine-cr/BeyondTolerance/issues"
+  },
+  "homepage": "https://github.com/vine-cr/BeyondTolerance#readme"
 }

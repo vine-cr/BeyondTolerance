@@ -4,10 +4,22 @@
     "editor.bracketPairColorization.enabled": true,
     "files.eol": "\n",
     "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true},
+        "source.fixAll.eslint": true
+    },
     "prettier.singleQuote": true,
     "prettier.semi": true,
     "prettier.printWidth": 100,
-    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/assets/css"
+        }
+    ]
 }
-
