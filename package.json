@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "json-server": "^1.0.0-beta.3"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
