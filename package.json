@@ -4,6 +4,7 @@
   "description": "A website that helps you calculate tolerance levels for manufacturing processes.",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch assets/scss/custom.scss:assets/css/custom.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

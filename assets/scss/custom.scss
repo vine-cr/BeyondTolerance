@@ -1,6 +1,9 @@
 @import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
+
+//alteração de variáveis do bootstrap
+@import "vars"; 
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import 'custom';
+//mudanças específicas para o projeto
+@import "style";
