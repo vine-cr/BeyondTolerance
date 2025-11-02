@@ -1,67 +1,157 @@
 # BeyondTolerance
 
-# Figma
-https://www.figma.com/design/zBLHzXyBZWiwYJWpMZPKrA/Projeto-de-Framework?node-id=0-1&t=XDkl7GIYyb2KYEP9-1# BeyondTolerance
+## 👤 Autor
 
-# Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
+- **Aluno:** Vinicius Campos De Ramos
 
-RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
+## 📖 Descrição do Projeto
 
- ID0 - Prototipa interfaces adaptáveis para no mínimo os tamanhos de tela mobile e desktop, usando ferramentas de design como Figma, Quant UX ou Sketch.
- 
- ID01 - Implementa um layout responsivo de uma página web utilizando um Framework CSS, como Bootstrap, Materialize ou Tailwind (com DaisyUI), aproveitando as técnicas de Flexbox ou Grid oferecidas pelo próprio framework, garantindo que o layout se adapte adequadamente a diferentes tamanhos de tela e dispositivos.
- 
- ID 02 - Utiliza técnica de responsividade nativa de CSS, como Flexbox ou Grid Layout, para criar layouts responsivos e fluidos em diferentes resoluções de tela.
- 
- ID 03 - Utiliza componentes CSS (ex. card, button ou outros) e JavaScript (ex. modal, carrousel ou outro) oferecidos por um Framework CSS.
- 
- ID 04 - Implementa um layout fluido e responsivo utilizando unidades relativas (vw, vh, %, em ou rem) em vez de unidades fixas (px) em diferentes dispositivos e tamanhos de tela.
- 
- ID 05 - Implementa animações em elementos da página, como fadeIn/fadeOut, slideIn/slideOut, utilizando CSS Animations ou bibliotecas de animação, como o Animate.css ou JQuery, para fornecer feedback visual ao usuário e criar uma experiência interativa.
- 
-[ ] ID 06 - Cria transições personalizadas entre diferentes estados da página ou elementos, como mudanças de layout, alterações de cor ou exibição/hide de elementos, usando CSS Transitions ou CSS Animation, para melhorar a usabilidade e a aparência da aplicação.
+**BeyondTolerance** é uma aplicação web de múltiplas páginas, focada em fornecer ferramentas para engenharia e manufatura. A principal funcionalidade da aplicação é uma calculadora de tolerância e ajuste (ex: "90H7p8"), que valida a entrada do usuário usando Expressão Regular (REGEX) e o plugin jQuery Mask.
 
- ID 07 - Aplica um Design System consistente, definindo diretrizes de estilo, cores, tipografia e padrões de componentes que são seguidos em toda a aplicação, garantindo uma experiência de usuário uniforme e atraente.
- 
- ID 08 - Implementa pré-processadores CSS, como o Sass, em conjunto com um Framework CSS ou de forma isolada, para organizar e modularizar o código CSS, aplicando variáveis, mixins e funções para facilitar a manutenção e escalabilidade dos estilos.
- 
- ID 09 - Aplica tipografia responsiva utilizando media queries ou a função clamp(), em conjunto com unidades relativas como rem, em ou vw, para ajustar o tamanho da fonte de acordo com diferentes tamanhos de tela.
- 
-RA2 - Realizar tratamento de formulários e aplicar validações customizadas no lado cliente, utilizando a API do HTML e expressões regulares (REGEX).
+A aplicação utiliza duas integrações de API distintas:
 
- ID 10 - Implementa tratamento de formulários no lado cliente com apresentação de mensagens de erro (texto próximo dos campos de entrada ou balões com mensagens) ou sucesso, utilizando os recursos da API do HTML, como validação de campos obrigatórios, tipo de entrada e limites de caracteres, garantindo que os dados inseridos sejam válidos antes de serem enviados para o servidor (via tratador de evento submit).
- 
- ID 11 - Aplica expressões regulares (REGEX) de forma eficiente para realizar validações customizadas nos campos de formulários, como formatos específicos de e-mail, telefone, data ou outros padrões personalizados definidos pelos requisitos do projeto.
- 
- ID 12 - Incorpora elementos de listagem, como checkbox, radio ou select, de maneira eficiente em formulários web, possibilitando a seleção e coleta precisa de dados pelos usuários.
- 
- ID 13 - Realiza a escrita e leitura de dados no Web Storage, permitindo a persistência de informações entre sessões de usuário e fornecendo uma maneira eficaz de armazenar dados localmente no navegador.
- 
-RA3 - Aplicar ferramentas para otimização do processo de desenvolvimento web, incluindo Node.js, NPM e linters para garantir a qualidade do código, juntamento com boas práticas de versionamento e organização de projetos.
+1.  **API Fake (JSON Server):** O escopo desta API é a persistência dos dados da calculadora. Requisições assíncronas (`fetch`) são usadas para:
+    - **POST:** Salvar os valores de cálculo e a data no endpoint `/calculations`.
+    - **GET:** Consumir os dados salvos e exibi-los dinamicamente na página de Histórico.
 
- ID 14 - Configura adequadamente um ambiente de desenvolvimento usando Node.js e NPM para gerenciar pacotes e dependências do projeto, facilitando a instalação e o uso de bibliotecas e ferramentas de terceiros.
- 
- ID 15 - Utiliza linters, como ESLint ou Stylelint, para analisar e corrigir automaticamente problemas de código, incluindo erros de sintaxe, estilo e boas práticas, garantindo a qualidade e consistência do código do projeto.
- 
-[ ] ID 17 - Utiliza técnicas de minificação e otimização de recursos, como minificação de CSS e JavaScript e otimização de imagens, para melhorar o desempenho e o tempo de carregamento do site ou aplicação.
+2.  **API Pública (ViaCEP):** O escopo desta API é aprimorar a experiência de usuário no formulário de cadastro. Ao digitar o CEP, uma requisição `fetch` é disparada para a API `https://viacep.com.br`, que retorna e preenche automaticamente os campos de endereço (rua, bairro, cidade, estado).
 
- ID 18 - Organiza o arquivo README.md conforme o template exigido na disciplina, contendo informações claras e estruturadas sobre o projeto, principalmente o checklist de tópicos devidamente preenchido.
- 
- ID 19 - Organiza os arquivos do projeto em uma estrutura coerente, lógica e modular, conforme projeto de exemplo, facilitando a localização, manutenção e escalabilidade.
- 
-[ ] ID 20 - Utiliza as metodologias BEM (Block Element Modifier) ou SMACSS (Scalable and Modular Architecture for CSS) para organizar e estruturar os estilos CSS de forma eficiente, garantindo a reutilização de estilos, a legibilidade do código e a manutenção sustentável do projeto.
+---
 
-RA4 - Aplicar bibliotecas de funções e componentes em JavaScript para aprimorar a interatividade de páginas web.
+## 🎨 Design e Prototipação
 
- ID 21 - Utiliza a biblioteca jQuery para manipular o DOM e aprimorar a interatividade das páginas web, implementando funcionalidades como eventos, animações e manipulação de elementos HTML de forma eficiente.
- 
- ID 22 - Seleciona e integra com sucesso um plugin jQuery, como o jQuery Mask Plugin ou outro plugin relevante para o projeto, a fim de melhorar a funcionalidade ou a aparência de elementos específicos em uma página web.
- 
-[ ] ID 23 - Utiliza bibliotecas de web components, como Lit, para criar componentes reutilizáveis e encapsulados, melhorando a modularidade e a manutenibilidade das páginas web.
+- **Prototipação no Figma:** https://www.figma.com/design/zBLHzXyBZWiwYJWpMZPKrA/Projeto-de-Framework?node-id=0-1&t=Gwzg8l0fLUQZXPFU-1
 
-[ ] ID 24 - Utiliza uma biblioteca de componentes prontos, como Material Web Components ou outra de escolha, ou então, algum componente independente (standalone) a fim de oferecer funcionalidades específicas sem a necessidade de estar integrado a uma biblioteca completa.
-RA5 - Efetuar requisições assíncronas para uma API fake e APIs públicas, permitindo a obtenção e manipulação de dados dinamicamente.
+---
 
- ID 25 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para persistir os dados originados de um formulário.
- 
- ID 26 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para exibição dos dados na página web.
+## 🛠️ Tecnologias e Dependências
+
+- **Framework CSS:** Bootstrap
+- **Dependências JavaScript:**
+  - `bootstrap`
+  - `jquery`
+  - `jquery-mask-plugin`
+  - `json-server`
+
+---
+
+## 🌐 Link para o Site em Produção
+
+https://github.com/vine-cr/BeyondTolerance
+
+---
+
+## 📖 Checklist | Indicadores de Desempenho (ID)
+
+### RA1 - Utilizar Frameworks CSS para estilização de elementos HTML e criação de layouts responsivos.
+
+| ID  | Indicador                                      | Status      | Observações                                                                                            |
+| :-- | :--------------------------------------------- | :---------- | :----------------------------------------------------------------------------------------------------- |
+| 01  | Prototipa interfaces (Figma, etc.)             | **[x] Sim** | O arquivo de design Figma foi fornecido.                                                               |
+| 02  | Implementa layout responsivo com Framework CSS | **[x] Sim** | Utiliza o sistema de grid do Bootstrap (ex: `container`, `row`, `col-lg-5`, `col-md-6`).               |
+| 03  | Implementa layout responsivo com CSS puro      | **[x] Sim** | O arquivo `_style.scss` contém `media queries` (ex: `@media (max-width: 991.98px)`).                   |
+| 04  | Utiliza componentes prontos e JS do framework  | **[x] Sim** | **CSS:** `navbar`, `card`, `btn`. **JS:** `navbar-toggler`, Tabs (`data-bs-toggle="tab"`) e Accordion. |
+| 05  | Cria layout fluido (unidades relativas)        | **[x] Sim** | O `_style.scss` utiliza `rem` e `vh` (ex: `.logo { height: 4rem; }`, `body { min-height: 100vh; }`).   |
+| 06  | Aplica um Design System consistente            | **[x] Sim** | O `_vars.scss` define variáveis de cor (ex: `$primary`) usadas globalmente.                            |
+| 07  | Utiliza Sass (variáveis, mixins, funções)      | **[x] Sim** | Utiliza **variáveis** e importações.                                                                   |
+| 08  | Aplica tipografia responsiva (mobile first)    | **[x] Sim** | Utiliza `media queries`, com a abordagem de "mobile-first" (`min-width`).                              |
+| 09  | Aplica técnicas de responsividade de imagens   | **[x] Sim** | Utiliza a classe `.img-fluid` do Bootstrap.                                                            |
+| 10  | Otimiza imagens (formatos, carregamento)       | **[x] Sim** | Utiliza formatos modernos (**WebP**), e implementa carregamento adaptativo (`srcset` ou `<picture>`).  |
+
+### RA2 - Realizar tratamento de formulários e aplicar validações customizadas no lado cliente.
+
+| ID  | Indicador                                   | Status      | Observações                                                                                              |
+| :-- | :------------------------------------------ | :---------- | :------------------------------------------------------------------------------------------------------- |
+| 11  | Implementa validação HTML nativa            | **[x] Sim** | Os formulários usam `required` e `type="email"`.                                                         |
+| 12  | Aplica expressões regulares (REGEX)         | **[x] Sim** | `script.js` utiliza `toleranceRegex` para validar o formato do input de tolerância.                      |
+| 13  | Utiliza elementos de seleção em formulários | **[x] Sim** | O formulário da calculadora (`calculator.html`) utiliza `type="checkbox"`.                               |
+| 14  | Implementa leitura e escrita no Web Storage | **[ ] Não** | A lógica de login/autenticação que usaria `localStorage` não está implementada no `script.js` fornecido. |
+
+### RA3 - Aplicar ferramentas para otimização do processo de desenvolvimento web.
+
+| ID  | Indicador                                           | Status      | Observações                                                                                 |
+| :-- | :-------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------ |
+| 15  | Configura ambiente com Node.js e NPM                | **[x] Sim** | O projeto contém o arquivo `package.json` com dependências e scripts.                       |
+| 16  | Utiliza boas práticas de versionamento (.gitignore) | **[x] Sim** | O arquivo `.gitignore` esta localizado nos arquivos do projeto.                             |
+| 17  | Mantém um README.md padronizado                     | **[x] Sim** | O arquivo `README.md` está presente e sendo estruturado.                                    |
+| 18  | Organiza arquivos do projeto de forma modular       | **[x] Sim** | O projeto segue uma estrutura clara, separando `pages`, `assets` (com `scss`, `js`, `img`). |
+| 19  | Configura linters e formatadores (ESLint, Prettier) | **[x] Sim** | O `package.json` inclui `prettier` nas dependências ou scripts.                             |
+
+### RA4 - Aplicar bibliotecas de funções e componentes em JavaScript para aprimorar a interatividade de páginas web.
+
+| ID  | Indicador                              | Status      | Observações                                                                                                |
+| :-- | :------------------------------------- | :---------- | :--------------------------------------------------------------------------------------------------------- |
+| 20  | Utiliza jQuery para manipulação do DOM | **[x] Sim** | `script.js` usa `$(document).ready` e seletores jQuery como `$('#toleranceInput')`.                        |
+| 21  | Integra e configura um plugin jQuery   | **[x] Sim** | O `jquery-mask-plugin` é importado e utilizado no `script.js` com `$('#toleranceInput').mask('SS0S0S0');`. |
+
+### RA5 - Efetuar requisições assíncronas para uma API fake e APIs públicas, permitindo a obtenção e manipulação de dados dinamicamente.
+
+| ID  | Indicador                                 | Status      | Observações                                                                                                   |
+| :-- | :---------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------ |
+| 22  | Realiza requisições (API fake - POST)     | **[x] Sim** | A função `saveCalculation` usa `fetch` com `method: 'POST'` para `http://localhost:3000/calculations`.        |
+| 23  | Realiza requisições (API fake - GET)      | **[x] Sim** | A função `loadHistory` usa `fetch` (GET) para buscar dados de `http://localhost:3000/calculations`.           |
+| 24  | Realiza requisições (APIs públicas reais) | **[x] Sim** | `script.js` realiza `fetch` para a API pública do ViaCEP (`https://viacep.com.br`) no formulário de cadastro. |
+
+---
+
+## 🚀 Instruções de Execução
+
+Siga os passos abaixo para configurar e executar a aplicação localmente:
+
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone https://github.com/vine-cr/BeyondTolerance
+    cd BeyondTolerance
+    ```
+
+2.  **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Inicie o JSON Server (API Fake):**
+    Abra um terminal e execute o comando para "assistir" o arquivo `db.json`:
+
+    ```bash
+    json-server --watch db.json
+    ```
+
+    O servidor da API estará rodando em `http://localhost:3000`.
+
+4.  **Compile o Sass (SCSS):**
+    Abra um **novo terminal** (mantenha o JSON Server rodando no outro) e execute o script `sass`:
+
+    ```bash
+    npm run sass
+    ```
+
+    Isso irá compilar seus arquivos SCSS para CSS e continuará "assistindo" por mudanças.
+
+5.  **Abra a aplicação:**
+    Abra o arquivo `index.html` no seu navegador (recomenda-se usar a extensão "Live Server" do VS Code para recarregamento automático).
+
+---
+
+## 📱 Telas da Aplicação
+
+### Tela Inicial
+
+![Tela Inicial da BeyondTolerance](assets/img/print-home.png)
+![Tela Inicial da BeyondTolerance](assets/img/print-home-mobile.png)
+
+### Tela de Login e Cadastro
+
+![Tela de Login da BeyondTolerance](assets/img/print-login.png)
+![Tela de Login da BeyondTolerance](assets/img/print-login-mobile.png)
+
+### Tela da Calculadora
+
+![Tela da Calculadora da BeyondTolerance](assets/img/print-calculator.png)
+![Tela da Calculadora da BeyondTolerance](assets/img/print-calculator-mobile.png)
+
+### Tela de Histórico
+
+![Tela de Histórico da BeyondTolerance](assets/img/print-history.png)
+![Tela de Histórico da BeyondTolerance](assets/img/print-history-mobile.png)
