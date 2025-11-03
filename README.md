@@ -60,11 +60,11 @@ https://github.com/vine-cr/BeyondTolerance
 
 ### RA2 - Realizar tratamento de formulários e aplicar validações customizadas no lado cliente.
 
-| ID  | Indicador                                   | Status      | Observações                                                                                              |
-| :-- | :------------------------------------------ | :---------- | :------------------------------------------------------------------------------------------------------- |
-| 11  | Implementa validação HTML nativa            | **[x] Sim** | Os formulários usam `required` e `type="email"`.                                                         |
-| 12  | Aplica expressões regulares (REGEX)         | **[x] Sim** | `script.js` utiliza `toleranceRegex` para validar o formato do input de tolerância.                      |
-| 13  | Utiliza elementos de seleção em formulários | **[x] Sim** | O formulário da calculadora (`calculator.html`) utiliza `type="checkbox"`.                               |
+| ID  | Indicador                                   | Status      | Observações                                                                                  |
+| :-- | :------------------------------------------ | :---------- | :------------------------------------------------------------------------------------------- |
+| 11  | Implementa validação HTML nativa            | **[x] Sim** | Os formulários usam `required` e `type="email"`.                                             |
+| 12  | Aplica expressões regulares (REGEX)         | **[x] Sim** | `script.js` utiliza `toleranceRegex` para validar o formato do input de tolerância.          |
+| 13  | Utiliza elementos de seleção em formulários | **[x] Sim** | O formulário da calculadora (`calculator.html`) utiliza `type="checkbox"`.                   |
 | 14  | Implementa leitura e escrita no Web Storage | **[x] Sim** | O `script.js` usa `localStorage` para registro/login e `sessionStorage` para a sessão ativa. |
 
 ### RA3 - Aplicar ferramentas para otimização do processo de desenvolvimento web.
@@ -160,4 +160,3 @@ Siga os passos abaixo para configurar e executar a aplicação localmente:
 
 ![Tela de Histórico da BeyondTolerance](assets/img/print-resources.png)
 ![Tela de Histórico da BeyondTolerance](assets/img/print-resources-mobile.png)
-
