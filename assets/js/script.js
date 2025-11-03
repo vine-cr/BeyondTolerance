@@ -145,7 +145,7 @@ async function saveCalculation(inputValue) {
 
     if (response.ok) {
       alert("Cálculo salvo com sucesso!");
-      globalThis.location.href = "/pages/history.html";
+      globalThis.location.href = "history.html";
     }
   } catch (error) {
     console.error("Falha ao salvar cálculo:", error);

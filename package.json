@@ -7,11 +7,14 @@
     "sass": "sass --watch assets/scss/custom.scss:assets/css/custom.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"**/*.{html,css,scss,js,json,md}\"",
-    "format:check": "prettier --check \"**/*.{html,css,scss,js,json,md}\""
+    "format:check": "prettier --check \"**/*.{html,css,scss,js,json,md}\"",
+    "predeploy": "npm run format",
+    "deploy": "gh-pages"
   },
   "keywords": [],
   "author": "Vinicius Campos De Ramos",
   "license": "ISC",
+  "homepage": "https://vine-cr.github.io/BeyondTolerance/",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
@@ -28,6 +31,5 @@
   },
   "bugs": {
     "url": "https://github.com/vine-cr/BeyondTolerance/issues"
-  },
-  "homepage": "https://github.com/vine-cr/BeyondTolerance#readme"
+  }
 }
