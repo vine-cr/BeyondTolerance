@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const calcForm = document.getElementById("calcForm");
   if (calcForm) {
     $(document).ready(function () {
-      $("#toleranceInput").mask("SS0S0S0");
+      $("#toleranceInput").mask("00S0S0");
     });
 
     calcForm.addEventListener("submit", function (e) {
@@ -115,13 +115,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          // Preenche os campos
           document.getElementById("rua").value = data.logradouro;
           document.getElementById("bairro").value = data.bairro;
           document.getElementById("cidade").value = data.localidade;
           document.getElementById("estado").value = data.uf;
 
-          // Foca no campo "número" para o usuário
           document.getElementById("numero").focus();
         } catch (error) {
           console.error("Erro ao buscar CEP:", error);
@@ -160,7 +158,7 @@ async function loadHistory() {
     const calculations = await response.json();
 
     const container = document.getElementById("historyListContainer");
-    container.innerHTML = ""; // Limpa o container
+    container.innerHTML = "";
 
     calculations.forEach((calc) => {
       container.innerHTML += `
