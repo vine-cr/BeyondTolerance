@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela inicial</title>
+
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body
+    class="home pt-5 text-white"
+    style="font-family: &quot;Inter&quot;, sans-serif"
+  >
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+      <div class="container d-flex align-items-center">
+        <a class="navbar-brand d-flex align-items-center p-0" href="index.html">
+          <img src="../assets/img/logo.webp" alt="logo" class="logo" />
+          <p class="m-0 text-white">BeyondTolerance</p>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbarCollapse"
+          aria-controls="mainNavbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="mainNavbarCollapse"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bi bi-house-fill"></i> home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">
+                <i class="bi bi-calculator"></i> Calculations
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">
+                <i class="bi bi-arrow-repeat"></i> History
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="resources.html"
+                style="color: #13a4ec"
+              >
+                <i class="bi bi-substack"></i> Resources
+              </a>
+            </li>
+          </ul>
+
+          <div class="d-flex ms-lg-auto">
+            <a href="login.html" class="nav-link nav-link-custom"
+              >login/cadastro</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h3 class="text-center">Resources</h3>
+
+    <main class="main pt-5">
+      <div class="container gap-4">
+        <div class="d-flex row justify-content-center text-center gap-2">
+          <div class="col-5 col-md">
+            <a
+              href=""
+              class="resource-card d-flex flex-column align-items-center justify-content-center"
+            >
+              <i class="bi bi-file-text fs-3"></i>
+              <span class="text-white">Article</span>
+            </a>
+          </div>
+          <div class="col-5 col-md">
+            <a
+              href=""
+              class="resource-card d-flex flex-column align-items-center justify-content-center"
+            >
+              <i class="bi bi-play-circle fs-3"></i>
+              <span>Tutorials</span>
+            </a>
+          </div>
+          <div class="col-5 col-md">
+            <a
+              href=""
+              class="resource-card d-flex flex-column align-items-center justify-content-center"
+            >
+              <i class="bi bi-book fs-3"></i>
+              <sapn>Glossary</sapn>
+            </a>
+          </div>
+          <div class="col-5 col-md">
+            <a
+              href=""
+              class="resource-card d-flex flex-column align-items-center justify-content-center"
+            >
+              <i class="bi bi-rulers fs-3"></i>
+              <span>Tolerance Standarts</span>
+            </a>
+          </div>
+        </div>
+
+        <h5 class="pt-4 pb-4">Frequentrly Asked Questions</h5>
+        <div class="d-block d-md-none">
+          <div class="accordion mb-5" id="accordionMobile">
+            <div class="accordion-item text-white">
+              <h2 class="accordion-header text-white">
+                <button
+                  class="accordion-button text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  What is tolerance?
+                </button>
+              </h2>
+
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse collapsed"
+                data-bs-parent="accordionMobile"
+              >
+                <div class="accordion-body">
+                  <div class="card" style="width: 100%">
+                    <img
+                      src="../assets/img/engrenagens.webp"
+                      class="card-img-top"
+                      alt="Engrenagens"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Understanding Tolerance Stack-Up Analysis
+                      </h5>
+                      <p class="card-text">
+                        Learn how to perform tolerance stack-up analysis to
+                        ensure proper fit and function of your designs.
+                      </p>
+                      <a href="#" class="btn btn-primary col-12">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item text-white">
+              <h2 class="accordion-header text-white">
+                <button
+                  class="accordion-button text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  How to calculate tolerance stack-up?
+                </button>
+              </h2>
+
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse collapsed"
+                data-bs-parent="accordionMobile"
+              >
+                <div class="accordion-body">
+                  <div class="card" style="width: 100%">
+                    <img
+                      src="../assets/img/como-calcular.webp"
+                      class="card-img-top"
+                      alt="Engrenagens"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Precision in Measurement</h5>
+                      <p class="card-text">
+                        Learn the essential principles and tools for performing
+                        accurate tolerance calculations, ensuring the perfect
+                        functionality and assembly of your components
+                      </p>
+                      <a href="#" class="btn btn-primary col-12">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item text-white">
+              <h2 class="accordion-header text-white">
+                <button
+                  class="accordion-button text-white mb-5"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTree"
+                >
+                  What are the types of fits in engineering?
+                </button>
+              </h2>
+
+              <div
+                id="collapseTree"
+                class="accordion-collapse collapse collapsed mb-4"
+                data-bs-parent="accordionMobile"
+              >
+                <div class="accordion-body">
+                  <div class="card" style="width: 100%">
+                    <img
+                      src="../assets/img/tipos-ajuste.webp"
+                      class="card-img-top"
+                      alt="Engrenagens"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Mechanical Fits: Clearance, Transition, and Interference
+                      </h5>
+                      <p class="card-text">
+                        Explore the different types of fits in mechanical
+                        engineering, understanding their characteristics,
+                        applications, and how they impact assembly performance
+                      </p>
+                      <a href="#" class="btn btn-primary col-12">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-md-block">
+          <div class="card desktop-banner-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <picture>
+                  <source
+                    srcset="../assets/img/engrenagens.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="../assets/img/engrenagens.png"
+                    class="img-fluid rounded-start h-100 object-fit-cover"
+                    alt="Engrenagens"
+                  />
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h6 class="mb-2">ARTICLE</h6>
+                  <h5 class="card-title">
+                    Understanding Tolerance Stack-Up Analysis
+                  </h5>
+                  <p class="card-text">
+                    Learn how to perform tolerance stack-up analysis to ensure
+                    proper fit and function of your designs.
+                  </p>
+                  <a href="#" class="btn btn-link p-0">Read More &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card desktop-banner-card mb-4">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <picture>
+                  <source
+                    srcset="../assets/img/como-calcular.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="../assets/img/como-calcular.webp"
+                    class="img-fluid rounded-start h-100 object-fit-cover"
+                    alt="Calculos Tolerancia"
+                  />
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h6 class="mb-2">GUIDE</h6>
+                  <h5 class="card-title">Precision in Measurement</h5>
+                  <p class="card-text">
+                    Learn the essential principles and tools for performing
+                    accurate tolerance calculations, ensuring the perfect
+                    functionality and assembly of your components
+                  </p>
+                  <a href="#" class="btn btn-link p-0">View Methods &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card desktop-banner-card mb-5">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <picture>
+                  <source
+                    srcset="../assets/img/tipos-ajuste.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="../assets/img/tipos-ajuste.webp"
+                    class="img-fluid rounded-start h-100 object-fit-cover"
+                    alt="Engrenagens"
+                  />
+                </picture>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h6 class="mb-2">ARTICLE</h6>
+                  <h5 class="card-title">
+                    Mechanical Fits: Clearance, Transition, and Interference
+                  </h5>
+                  <p class="card-text">
+                    Explore the different types of fits in mechanical
+                    engineering, understanding their characteristics,
+                    applications, and how they impact assembly performance
+                  </p>
+                  <a href="#" class="btn btn-link p-0">Explore Types &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container pt-5 pb-4 ms-3" data-bs-theme="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5 mb-4">
+            <a
+              href="/"
+              class="d-flex align-items-center text-decoration-none text-white mb-2"
+            >
+              <i
+                class="bi bi-gear-wide-connected fs-4 me-2"
+                style="color: #0dbe98"
+              ></i>
+              <span class="fs-5 fw-bold">BeyondTolerance</span>
+            </a>
+            <p class="small text-body-secondary pe-lg-5">
+              Precision engineering at your fingertips.
+            </p>
+          </div>
+
+          <div class="col-6 col-lg-2 mb-4">
+            <h6 class="fw-bold mb-3">Product</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Calculators</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2 mb-4">
+            <h6 class="fw-bold mb-3">Resources</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Articles</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Tutorials</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Glossary</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Standards</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <h6 class="fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-body-secondary"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-center small text-body-secondary m-0">
+              &copy; 2024 BeyondTolerance. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
